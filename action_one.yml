@@ -1,0 +1,14 @@
+name: action_one
+
+on:
+  workflow_call:
+    inputs: {} # if needed
+    secrets: {} # if needed
+
+jobs:
+  submit-dependencies:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Display Message
+        run: |
+          echo "Hello from action one workflow!"
